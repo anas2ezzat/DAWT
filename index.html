@@ -7,16 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@200;300;400;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-/* ============================================================
-   DAWT · VOLT VANE — TEAM 10120
-   Egypt STEM Schools · Grade 10 · Semester 2 · 2025–2026
-   ============================================================
-   EDIT GUIDE:
-   • To swap a team photo: replace the <img> src inside .member-photo-wrap
-   • To add prototype images: replace <img> src inside .proto-img-slot
-   • To add location image: replace <img> src inside #location-img-placeholder
-   • To insert custom code blocks: find the <!-- INSERT CUSTOM CODE HERE --> comments
-   ============================================================ */
+
 
 :root {
   --deep:   #030b14;
@@ -46,11 +37,11 @@ body{
   overflow-x:hidden;
 }
 
-/* ── CANVAS BG ── */
+
 #bg-canvas{position:fixed;inset:0;z-index:0;pointer-events:none;}
 .layer{position:relative;z-index:1;}
 
-/* ── NAV ── */
+
 nav{
   position:fixed;top:0;left:0;right:0;z-index:100;
   display:flex;align-items:center;justify-content:space-between;
@@ -72,13 +63,12 @@ nav{
 }
 .nav-links a:hover{color:var(--wind);}
 
-/* ── DIVIDER ── */
+
 .divider{
   width:100%;height:1px;
   background:linear-gradient(to right,transparent,var(--border),transparent);
 }
 
-/* ── SECTION BASE ── */
 .section-base{padding:6rem 4rem;max-width:1280px;margin:0 auto;}
 .section-tag{
   font-family:'Space Mono',monospace;font-size:.6rem;
@@ -96,7 +86,6 @@ nav{
   font-size:.97rem;line-height:1.8;color:var(--sub);max-width:700px;
 }
 
-/* ── HERO ── */
 #home{
   min-height:100vh;display:flex;flex-direction:column;
   justify-content:center;padding:6rem 4rem 4rem;
@@ -126,7 +115,6 @@ nav{
 }
 .hero-sub strong{color:var(--wind);font-weight:600;}
 
-/* ── SCROLL HINT ── */
 .scroll-hint{
   position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);
   display:flex;flex-direction:column;align-items:center;gap:.5rem;
@@ -142,7 +130,7 @@ nav{
   animation:scrollPulse 2s 2s infinite;
 }
 
-/* ── TEAM GRID ── */
+
 #team{background:var(--surface);}
 .team-grid{
   display:grid;
@@ -157,11 +145,7 @@ nav{
 }
 .member-card:hover{border-color:var(--wind);transform:translateY(-4px);}
 
-/* ── MEMBER PHOTO SLOT ──
-   Replace the src attribute of the <img> inside .member-photo-wrap
-   to display an actual team member photo.
-   Recommended size: 400 × 400 px (square), JPEG or WebP.
-   ── */
+
 .member-photo-wrap{
   width:100%;aspect-ratio:1;
   background:var(--panel);
@@ -199,7 +183,6 @@ nav{
   line-height:1.35;letter-spacing:.01em;
 }
 
-/* ── MISSION / PROBLEM ── */
 #problem .grid{
   display:grid;grid-template-columns:1fr 1fr;
   gap:2rem;margin-top:3rem;
@@ -227,7 +210,7 @@ nav{
   color:var(--wind);margin-top:.9rem;opacity:.65;
 }
 
-/* ── SOLUTION ── */
+
 #solution{
   display:grid;grid-template-columns:1fr 1fr;
   gap:5rem;align-items:center;
@@ -238,7 +221,7 @@ nav{
   filter:drop-shadow(0 0 30px rgba(23,201,232,.18));
 }
 
-/* ── SPECS ── */
+
 .specs-grid{
   display:grid;grid-template-columns:repeat(3,1fr);
   gap:1.4rem;margin-top:3rem;
@@ -262,7 +245,7 @@ nav{
 .spec-key{font-size:.8rem;color:var(--sub);}
 .spec-val{font-family:'Space Mono',monospace;font-size:.78rem;color:var(--wind);font-weight:700;}
 
-/* ── MECHANISM STEPS ── */
+
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;margin-top:3rem;}
 .step{
   position:relative;padding:1.8rem 1.4rem;
@@ -282,7 +265,6 @@ nav{
 .step-title{font-weight:600;font-size:.88rem;color:var(--text);margin-bottom:.5rem;}
 .step-body{font-size:.8rem;line-height:1.68;color:var(--sub);}
 
-/* ── EQUATIONS ── */
 .eq-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:3rem;}
 .eq-card{
   background:var(--card);border:1px solid var(--border);
@@ -302,17 +284,14 @@ nav{
 }
 .eq-desc{font-size:.83rem;line-height:1.7;color:var(--sub);}
 
-/* ── PROTOTYPE IMAGES SECTION ── */
+
 #proto-images{background:var(--surface);}
 .proto-img-grid{
   display:grid;grid-template-columns:repeat(3,1fr);
   gap:1.6rem;margin-top:3rem;
 }
 .proto-img-slot{
-  /* ── PROTOTYPE IMAGE SLOT ──
-     Replace the <img> src here with your actual prototype photo.
-     Recommended size: 800 × 600 px, JPEG or WebP.
-     ── */
+ 
   background:var(--panel);border:1px solid var(--border);
   border-radius:var(--radius);overflow:hidden;
   aspect-ratio:4/3;position:relative;
@@ -345,10 +324,10 @@ nav{
   letter-spacing:.1em;text-transform:uppercase;
   color:var(--sub);border-top:1px solid var(--border);
 }
-/* For slots that show actual image — hide the placeholder overlay */
+
 .proto-img-slot.has-image .proto-img-slot-placeholder{display:none;}
 
-/* ── MATERIALS TABLE ── */
+
 .mat-table{width:100%;border-collapse:collapse;margin-top:3rem;font-size:.86rem;}
 .mat-table th{
   font-family:'Space Mono',monospace;font-size:.58rem;
@@ -369,7 +348,7 @@ nav{
 .badge-composite{background:rgba(232,160,32,.1);color:var(--amber);}
 .badge-metal{background:rgba(126,170,200,.08);color:var(--silver);}
 
-/* ── PRIOR SOLUTIONS ── */
+
 .compare-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.6rem;margin-top:3rem;}
 .compare-card{
   background:var(--card);border:1px solid var(--border);
@@ -400,15 +379,9 @@ nav{
 }
 .cc-list li::before{position:absolute;left:0;content:'–';opacity:.4;}
 
-/* ── LOCATION PLACEHOLDER ── */
+
 #location-placeholder{background:var(--surface);}
-/* ── LOCATION IMAGE PLACEHOLDER ──
-   This section replaces the original map/location design.
-   To add your own location image or map:
-   1. Find the div with id="location-img-placeholder"
-   2. Replace the inner content with:
-      <img src="YOUR_IMAGE_PATH" alt="Location map" style="width:100%;height:100%;object-fit:cover;display:block;">
-   ── */
+
 #location-img-placeholder{
   width:100%;max-width:900px;margin:2.5rem auto 0;
   min-height:420px;background:var(--panel);
@@ -435,7 +408,7 @@ nav{
   color:rgba(23,201,232,.28);text-align:center;
 }
 
-/* ── REFERENCES ── */
+
 .ref-list{margin-top:2rem;}
 .ref-item{
   display:flex;gap:1rem;padding:.65rem 0;
@@ -458,10 +431,6 @@ nav{
   letter-spacing:.08em;color:var(--wind);
 }
 
-/* ── RESULTS (hidden by default) ──
-   The results section is hidden on initial load.
-   A toggle button reveals it.
-   ── */
 #results{display:none;}
 #results.visible{display:block;}
 .results-toggle-wrap{margin-top:2.5rem;text-align:center;}
@@ -477,7 +446,7 @@ nav{
 .btn-reveal:hover{border-color:var(--wind);background:rgba(23,201,232,.07);}
 .btn-reveal svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;}
 
-/* ── RESULTS CONTENT ── */
+
 .results-banner{
   display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem;margin-top:3rem;
 }
@@ -500,7 +469,6 @@ nav{
   margin-bottom:.9rem;
 }
 
-/* ── THANK YOU ── */
 #thanks{
   background:var(--surface);text-align:center;
   padding:6rem 2rem;position:relative;overflow:hidden;
@@ -527,7 +495,7 @@ nav{
 }
 .btn-back:hover{border-color:var(--wind);background:rgba(23,201,232,.07);}
 
-/* ── FOOTER ── */
+
 footer{
   border-top:1px solid var(--border);padding:2.5rem 4rem;
   display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;
@@ -542,7 +510,7 @@ footer{
   letter-spacing:.12em;color:var(--sub);text-align:right;line-height:1.9;
 }
 
-/* ── ANIMATIONS ── */
+
 @keyframes fadeUp{
   from{opacity:0;transform:translateY(30px);}
   to{opacity:1;transform:translateY(0);}
@@ -551,11 +519,11 @@ footer{
 @keyframes scrollPulse{0%,100%{opacity:.3;}50%{opacity:1;}}
 @keyframes spin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
 
-/* ── SCROLL REVEAL ── */
+
 .reveal{opacity:0;transform:translateY(34px);transition:opacity .7s ease,transform .7s ease;}
 .reveal.visible{opacity:1;transform:translateY(0);}
 
-/* ── RESPONSIVE ── */
+
 @media(max-width:1024px){
   .team-grid{grid-template-columns:repeat(2,1fr);}
   .proto-img-grid{grid-template-columns:repeat(2,1fr);}
@@ -585,9 +553,7 @@ footer{
 
 <canvas id="bg-canvas"></canvas>
 
-<!-- ═══════════════════════════════════════════════════════════
-     NAVIGATION
-     ═══════════════════════════════════════════════════════════ -->
+
 <nav>
   <a href="#home" class="nav-logo">VOLT<span>VANE</span></a>
   <ul class="nav-links">
@@ -604,9 +570,7 @@ footer{
   </ul>
 </nav>
 
-<!-- ═══════════════════════════════════════════════════════════
-     HERO
-     ═══════════════════════════════════════════════════════════ -->
+
 <div id="home" class="layer">
   <div class="hero-eyebrow">Egypt STEM Schools · Capstone Project · Team 10120 · Grade 10 · Semester 2</div>
   <div class="hero-brand">
@@ -626,14 +590,7 @@ footer{
 
 <div class="divider layer"></div>
 
-<!-- ═══════════════════════════════════════════════════════════
-     SECTION 00 — TEAM MEMBERS
-     ─────────────────────────────────────────────────────────
-     To add a photo:
-       1. Find the .member-photo-wrap for a member
-       2. Add an <img> tag inside it with your photo src
-       3. Add class "has-image" to the parent .proto-img-slot
-     ═══════════════════════════════════════════════════════════ -->
+
 <section id="team" class="layer">
   <div class="section-base">
     <div class="section-tag">00 — The Team</div>
@@ -641,10 +598,7 @@ footer{
     <p class="section-body">Student engineers from Egypt STEM Schools, united by the conviction that clean wind energy can reach those who need it most.</p>
     <div class="team-grid">
 
-      <!-- MEMBER 1 — Anas Ezzat
-           PHOTO: Replace the content of .member-photo-wrap with:
-           <img src="path/to/anas-ezzat.jpg" alt="Anas Ezzat">
-           ── -->
+    
       <div class="member-card reveal">
         <div class="member-photo-wrap">
           <img src="anas ezzat.png" alt="Anas Ezzat">
@@ -658,9 +612,7 @@ footer{
         </div>
       </div>
 
-      <!-- MEMBER 2 — Ibrahim Mohammed
-           PHOTO: Replace with <img src="path/to/ibrahim-mohammed.jpg" alt="Ibrahim Mohammed">
-           ── -->
+    
       <div class="member-card reveal" style="transition-delay:.1s">
         <div class="member-photo-wrap">
           <img src="ibrahim mohammed.png" alt="Ibrahim Mohammed">
@@ -673,9 +625,7 @@ footer{
         </div>
       </div>
 
-      <!-- MEMBER 3 — Ibrahim Ahmed Abd El-Hakam
-           PHOTO: Replace with <img src="path/to/ibrahim-ahmed.jpg" alt="Ibrahim Ahmed">
-           ── -->
+     
       <div class="member-card reveal" style="transition-delay:.2s">
         <div class="member-photo-wrap">
   <img src="ibrahim ahmed.png" alt="Ibrahim Ahmed Abd El-Hakam">
@@ -688,9 +638,7 @@ footer{
         </div>
       </div>
 
-      <!-- MEMBER 4 — Youssef Mahmoud Salah El-Tabakh
-           PHOTO: Replace with <img src="path/to/youssef.jpg" alt="Youssef Mahmoud">
-           ── -->
+    
       <div class="member-card reveal" style="transition-delay:.3s">
         <div class="member-photo-wrap">
      <img src="youseff mahmoud.png" alt="Youssef Mahmoud Salah El-Tabakh">
@@ -709,9 +657,7 @@ footer{
 
 <div class="divider layer"></div>
 
-<!-- ═══════════════════════════════════════════════════════════
-     SECTION 01 — PROBLEM STATEMENT
-     ═══════════════════════════════════════════════════════════ -->
+
 <section id="problem" class="layer">
   <div class="section-base">
     <div class="section-tag">01 — Problem Statement</div>
@@ -748,9 +694,7 @@ footer{
 
 <div class="divider layer"></div>
 
-<!-- ═══════════════════════════════════════════════════════════
-     SECTION 02 — SOLUTION OVERVIEW
-     ═══════════════════════════════════════════════════════════ -->
+
 <div id="solution" class="layer">
   <div class="text-col reveal">
     <div class="section-tag">02 — Proposed Solution</div>
@@ -779,34 +723,34 @@ footer{
         <line x1="8" y1="125" x2="72" y2="145"/>
         <line x1="8" y1="265" x2="72" y2="245"/>
       </g>
-      <!-- Diffuser body -->
+
       <path d="M98,115 L98,285 L285,318 L285,82 Z" fill="none" stroke="#17c9e8" stroke-width="1.8" opacity=".55"/>
-      <!-- Exit flange -->
+
       <line x1="285" y1="62" x2="285" y2="338" stroke="#e8a020" stroke-width="2.5" opacity=".75"/>
-      <!-- Inlet lip -->
+
       <path d="M98,115 Q86,115 86,132 L86,268 Q86,285 98,285" fill="none" stroke="#17c9e8" stroke-width="2.2"/>
-      <!-- Diffuser flow guide lines -->
+
       <line x1="98" y1="200" x2="285" y2="200" stroke="rgba(23,201,232,.07)" stroke-width="1" stroke-dasharray="3 5"/>
-      <!-- Tower -->
+  
       <rect x="185" y="320" width="18" height="75" fill="#0b1a2e" stroke="#17c9e8" stroke-width="1" opacity=".7"/>
-      <!-- Base -->
+   
       <rect x="148" y="388" width="88" height="14" rx="3" fill="#0b1a2e" stroke="#17c9e8" stroke-width="1" opacity=".55"/>
-      <!-- Hub -->
+
       <circle cx="170" cy="200" r="13" fill="#07121f" stroke="#17c9e8" stroke-width="2"/>
       <circle cx="170" cy="200" r="4.5" fill="#17c9e8"/>
-      <!-- Rotor blades -->
+  
       <g id="rotor2" style="transform-origin:170px 200px;animation:spin 3s linear infinite;">
         <path d="M170,187 Q160,148 163,116 Q170,111 175,116 Q171,148 170,187Z" fill="#0b1a2e" stroke="#17c9e8" stroke-width="1.1"/>
         <path d="M170,187 Q160,148 163,116 Q170,111 175,116 Q171,148 170,187Z" fill="#0b1a2e" stroke="#17c9e8" stroke-width="1.1" transform="rotate(120,170,200)"/>
         <path d="M170,187 Q160,148 163,116 Q170,111 175,116 Q171,148 170,187Z" fill="#0b1a2e" stroke="#17c9e8" stroke-width="1.1" transform="rotate(240,170,200)"/>
       </g>
-      <!-- Labels -->
+  
       <text x="285" y="55" font-family="'Space Mono',monospace" font-size="8.5" fill="#e8a020" text-anchor="middle">EXIT FLANGE</text>
       <text x="84" y="107" font-family="'Space Mono',monospace" font-size="8" fill="#17c9e8" text-anchor="end">INLET LIP</text>
       <text x="190" y="355" font-family="'Space Mono',monospace" font-size="8.5" fill="#4a7896" text-anchor="middle">TOWER</text>
       <text x="225" y="194" font-family="'Space Mono',monospace" font-size="8.5" fill="#4a7896">DIFFUSER</text>
       <text x="148" y="192" font-family="'Space Mono',monospace" font-size="8.5" fill="#17c9e8" text-anchor="end">ROTOR</text>
-      <!-- Dimension -->
+   
       <line x1="98" y1="305" x2="285" y2="330" stroke="rgba(232,160,32,.25)" stroke-width="1" stroke-dasharray="2 4"/>
       <text x="188" y="332" font-family="'Space Mono',monospace" font-size="7.5" fill="rgba(232,160,32,.55)" text-anchor="middle">L = 30 cm</text>
     </svg>
@@ -815,9 +759,7 @@ footer{
 
 <div class="divider layer"></div>
 
-<!-- ═══════════════════════════════════════════════════════════
-     SECTION 03 — SPECIFICATIONS
-     ═══════════════════════════════════════════════════════════ -->
+
 <section id="specs" class="layer">
   <div class="section-base">
     <div class="section-tag">03 — Technical Specifications</div>
@@ -886,9 +828,7 @@ footer{
 
 <div class="divider layer"></div>
 
-<!-- ═══════════════════════════════════════════════════════════
-     SECTION 04 — MECHANISM
-     ═══════════════════════════════════════════════════════════ -->
+
 <section id="mechanism" class="layer">
   <div class="section-base">
     <div class="section-tag">04 — Operating Mechanism</div>
@@ -921,9 +861,7 @@ footer{
 
 <div class="divider layer"></div>
 
-<!-- ═══════════════════════════════════════════════════════════
-     SECTION 05 — MATHEMATICAL ANALYSIS (LAWS & PRINCIPLES)
-     ═══════════════════════════════════════════════════════════ -->
+
 <section id="analysis" class="layer">
   <div class="section-base">
     <div class="section-tag">05 — Theoretical Framework</div>
@@ -976,20 +914,7 @@ footer{
 
 <div class="divider layer"></div>
 
-<!-- ═══════════════════════════════════════════════════════════
-     SECTION 06 — PROTOTYPE IMAGES
-     ─────────────────────────────────────────────────────────
-     To insert prototype photos:
-       1. Find the .proto-img-slot div for each slot
-       2. Add class "has-image" to it: <div class="proto-img-slot has-image">
-       3. Add an <img> tag inside with your photo src
-       4. Update the caption text in .proto-img-caption
-     Example:
-       <div class="proto-img-slot has-image">
-         <img src="prototype-front.jpg" alt="DAWT front view">
-         <div class="proto-img-caption">Front view — diffuser inlet</div>
-       </div>
-     ═══════════════════════════════════════════════════════════ -->
+
 <section id="proto-images" class="layer">
   <div class="section-base">
     <div class="section-tag">06 — Prototype Gallery</div>
@@ -1009,7 +934,6 @@ footer{
         <div class="proto-img-caption">Fig. 1 — MAIN SYSTEM </div>
       </div>
 
-      <!-- PROTOTYPE IMAGE SLOT 2 — Side view / tower -->
       <div class="proto-img-slot reveal" style="transition-delay:.1s">
 <img src="MOTOR SYSTEM.jpeg" alt="showing motor system and gears">
         <div class="proto-img-slot-placeholder">
@@ -1021,7 +945,6 @@ footer{
         <div class="proto-img-caption">Fig. 2 — MOTOR SYSTEM &amp; ENERGY </div>
       </div>
 
-      <!-- PROTOTYPE IMAGE SLOT 3 — Rotor / blades -->
       <div class="proto-img-slot reveal" style="transition-delay:.2s">
         <img src="ROTOR SYSTEM.jpeg" alt="Rotor detail — PETG blades and spinner">
         <div class="proto-img-slot-placeholder">
@@ -1042,9 +965,7 @@ footer{
 
 <div class="divider layer"></div>
 
-<!-- ═══════════════════════════════════════════════════════════
-     SECTION 07 — MATERIALS
-     ═══════════════════════════════════════════════════════════ -->
+
 <section id="materials" class="layer">
   <div class="section-base">
     <div class="section-tag">07 — Bill of Materials</div>
@@ -1078,12 +999,6 @@ footer{
 
 <div class="divider layer"></div>
 
-<!-- ═══════════════════════════════════════════════════════════
-     SECTION 08 — RESULTS (HIDDEN BY DEFAULT)
-     ─────────────────────────────────────────────────────────
-     This section is hidden on initial page load.
-     Click "View Experimental Results" below to reveal it.
-     ═══════════════════════════════════════════════════════════ -->
 <section id="results-toggle-section" class="layer">
   <div class="section-base" style="padding-top:4rem;padding-bottom:4rem;text-align:center;">
     <div class="results-toggle-wrap">
@@ -1101,7 +1016,6 @@ footer{
     <h2 class="section-title">Test <span class="t">Outcomes</span> &amp; <span class="a">Performance</span></h2>
     <p class="section-body">The prototype was tested under two conditions — without the diffuser (baseline) and with the diffuser — across five independent trials. Power output was computed using P = V × I, and energy via E = P × t over five-minute intervals. All measurements used a calibrated multimeter (±0.5% uncertainty).</p>
 
-    <!-- Results bars — only keeping Avg. Energy (no diffuser) and requirements met -->
     <div class="results-banner reveal">
       <div class="res-item">
         <div class="res-num">196.4 J</div>
@@ -1136,9 +1050,7 @@ footer{
       </div>
     </div>
 
-    <!-- ── INSERT CUSTOM RESULTS CONTENT HERE ──
-         Add additional charts, tables, or data visualisations below this comment.
-         ── -->
+   
 
   </div>
 </section>
@@ -1218,15 +1130,13 @@ footer{
 
 <div class="divider layer"></div>
 
-<!-- ═══════════════════════════════════════════════════════════
-     SECTION 11 — REFERENCES
-     ═══════════════════════════════════════════════════════════ -->
+
 <section id="references" class="layer">
   <div class="section-base">
     <div class="section-tag">11 — Literature Cited</div>
     <h2 class="section-title">Academic <span class="t">References</span></h2>
 
-    <!-- Resource packs label -->
+
     <div class="ref-team-credit reveal">
       Resource packs confirmed by Team 10120
     </div>
@@ -1256,25 +1166,19 @@ footer{
       <div class="ref-item"><span class="ref-num">[22]</span><span>World Health Organization (WHO). (2019). <em>Ambient air quality and health: Fact sheet.</em> <a href="https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health" target="_blank">WHO Fact Sheet</a></span></div>
     </div>
 
-    <!-- ── INSERT CUSTOM REFERENCES HERE ──
-         Add additional references below this comment using the same .ref-item format.
-         ── -->
+
 
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     THANK YOU
-     ═══════════════════════════════════════════════════════════ -->
+
 <section id="thanks" class="layer">
   <div class="thanks-word">THANK YOU</div>
   <p class="thanks-sub">For your time, your curiosity, and your belief that students can engineer a better world — one gust of wind at a time.</p>
   <a href="#home" class="btn-back">↑ Back to Top</a>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     FOOTER
-     ═══════════════════════════════════════════════════════════ -->
+
 <footer class="layer">
   <div>
     <div class="footer-logo">VOLT<span>VANE</span> · DAWT</div>
@@ -1287,11 +1191,10 @@ footer{
   </div>
 </footer>
 
-<!-- ═══════════════════════════════════════════════════════════
+<!--
      JAVASCRIPT
-     ═══════════════════════════════════════════════════════════ -->
+-->
 <script>
-/* ── PARTICLE BACKGROUND ── */
 const canvas = document.getElementById('bg-canvas');
 const ctx    = canvas.getContext('2d');
 let W, H;
@@ -1352,14 +1255,13 @@ function drawBg() {
 }
 drawBg();
 
-/* ── SCROLL REVEAL ── */
 const revealEls = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: .1, rootMargin: '0px 0px -30px 0px' });
 revealEls.forEach(el => observer.observe(el));
 
-/* ── RESULTS TOGGLE ── */
+
 function toggleResults() {
   const r  = document.getElementById('results');
   const btn = document.getElementById('resultsToggleBtn');
@@ -1376,9 +1278,9 @@ function toggleResults() {
     btn.innerHTML = `
       <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;"><path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19m-6.72-1.07a3 3 0 11-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
       Hide Results`;
-    // Draw chart once visible
+
     drawResultsChart();
-    // Trigger reveal on newly visible elements
+
     r.querySelectorAll('.reveal').forEach(el => {
       el.classList.add('visible');
     });
@@ -1386,7 +1288,7 @@ function toggleResults() {
   }
 }
 
-/* ── RESULTS CHART ── */
+
 let chartDrawn = false;
 function drawResultsChart() {
   if (chartDrawn) return;
@@ -1409,7 +1311,6 @@ function drawResultsChart() {
   const left = 52;
   const barW = Math.min(60, (cW - left - 40) / 5 - 10);
 
-  // Grid
   [150, 170, 190, 210].forEach(v => {
     const y = bot - (v/maxV)*(bot-top);
     ctx2.beginPath();
@@ -1420,7 +1321,7 @@ function drawResultsChart() {
     ctx2.fillText(v+'J', left-6, y+3);
   });
 
-  // Ref line 196.4
+
   const ry = bot - (196.4/maxV)*(bot-top);
   ctx2.beginPath();
   ctx2.setLineDash([4,4]);
@@ -1451,9 +1352,6 @@ function drawResultsChart() {
   });
 }
 
-/* ── INSERT CUSTOM JAVASCRIPT HERE ──
-   Add any additional scripts below this comment.
-   ── */
 
 </script>
 </body>
